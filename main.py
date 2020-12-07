@@ -41,7 +41,7 @@ def menu():
         systemInfo.sysinfo()
         restart()
     elif choice == "4":
-        x = 1
+        x = 2
     elif choice == "5":
         x=1
     elif choice == "6":
@@ -55,7 +55,6 @@ def menu():
     elif choice == "10":
         x=1
     else:
-        os.system("clear")
         print(29 * "-")
         print("|You must only select option|")
         print("|Please try again           |")

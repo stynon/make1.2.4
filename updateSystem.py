@@ -16,5 +16,4 @@ __status__ = "Development"
 def updatesystem():
     os.system("sudo apt update")
     os.system("sudo apt upgrade")
-    os.system("clear")
 
