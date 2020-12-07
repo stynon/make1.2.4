@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-IP weergave (LAN en/of WAN, eth0 en of wlan0)
+Software installatie
 """
 
 # Import
@@ -11,6 +11,5 @@ __email__ = "stijn.janssen@student.kdg.be"
 __status__ = "Development"
 
 
-def ip():
-    os.system("ifconfig")
-
+def installvpn():
+    os.system("sudo apt-get install openvpn")
