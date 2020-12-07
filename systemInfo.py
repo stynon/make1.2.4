@@ -12,19 +12,15 @@ __status__ = "Development"
 
 
 def sysinfo():
-    # Architecture
-    print("Architecture: " + platform.architecture()[0])
-
-    # machine
-    print("Machine: " + platform.machine())
-
-    # node
-    print("Node: " + platform.node())
-
-    # system
-    print("System: " + platform.system())
-
-    # distribution
-    dist = platform.dist()
-    dist = " ".join(x for x in dist)
-    print("Distribution: " + dist)
+    print
+    'system   :', platform.system()
+    print
+    'node     :', platform.node()
+    print
+    'release  :', platform.release()
+    print
+    'version  :', platform.version()
+    print
+    'machine  :', platform.machine()
+    print
+    'processor:', platform.processor()
