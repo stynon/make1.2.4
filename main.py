@@ -15,6 +15,8 @@ import install
 #import networkscan
 import portscan
 import gpioPin
+import calculator
+import compman
 
 __author__ = "Stijn Janssen"
 __email__ = "stijn.janssen@student.kdg.be"
@@ -29,7 +31,7 @@ def menu():
     now = datetime.datetime.now()
     print(now.strftime("[%H:%M]"), 3 * "-", "Control Center", 10 * "-")
     choice = input("""
-    1: Ip weergave       | 5: Networkscan               | 9:  Apparmor
+    1: Ip weergave       | 5: Networkscan               | 9:  calculator
     2: PasswordGen       | 6: System update en upgrade  | 10: Computer management
     3: System info       | 7: Portscan
     4: Install openvpn   | 8: gpio
@@ -65,9 +67,13 @@ def menu():
         gpioPin.pinout()
         restart()
     elif choice == "9":
-        x=1
+        calculator.calc()
+        print("\n")
+        restart()
     elif choice == "10":
-        x=1
+        compman.com_mana()
+        print("\n")
+        restart()
     else:
         print(29 * "-")
         print("|You must only select option|")
