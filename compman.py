@@ -5,6 +5,8 @@ Info about our project comes here.
 
 # Import
 import os
+import main
+
 
 __author__ = "Stijn Janssen"
 __email__ = "stijn.janssen@student.kdg.be"
@@ -43,12 +45,6 @@ Please enter your choice (q to go back): """)
         com_mana()
     elif com_input == "Q" or com_input == "q":
         os.system("clear")
-        menu()
-    else:
-        os.system("clear")
-        print(29 * "-")
-        print("|You must only select option|")
-        print("|Please try again           |")
-        print(29 * "-")
-        com_mana()
+        main.restart()
+
 
