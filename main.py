@@ -31,10 +31,10 @@ def menu():
     now = datetime.datetime.now()
     print(now.strftime("[%H:%M]"), 3 * "-", "Control Center", 10 * "-")
     choice = input("""
-    1: Ip weergave       | 5: Networkscan               | 9:  calculator
-    2: PasswordGen       | 6: System update en upgrade  | 10: Computer management
-    3: System info       | 7: Portscan
-    4: Install openvpn   | 8: gpio
+    1: Ip weergave      | 5: Networkscan               | 9:  calculator
+    2: PasswordGen      | 6: System update en upgrade  | 10: Computer management
+    3: System info      | 7: Portscan
+    4: Install openvpn  | 8: gpio
     Choose the option you like: """)
 
     if choice == "1":
